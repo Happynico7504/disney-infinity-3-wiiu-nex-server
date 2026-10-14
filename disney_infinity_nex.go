@@ -164,9 +164,9 @@ func registerMatchmaking(endpoint *nexgo.PRUDPEndPoint, uri string) {
 }
 
 func main() {
-	host := env("NEX_HOST", "127.0.0.1")
-	authPort, _ := strconv.Atoi(env("AUTH_PORT", "60000"))
-	securePort, _ := strconv.Atoi(env("SECURE_PORT", "60001"))
+	host := env("NEX_HOST", "45.157.178.35")
+	authPort, _ := strconv.Atoi(env("AUTH_PORT", "60020"))
+	securePort, _ := strconv.Atoi(env("SECURE_PORT", "60021"))
 	fmt.Printf("Disney Infinity 3.0 NEX: access key %s, game server id 0x%X, host %s\n", AccessKey, GameServerID, host)
 	go startAuth(host, authPort, securePort)
 	startSecure(host, securePort)

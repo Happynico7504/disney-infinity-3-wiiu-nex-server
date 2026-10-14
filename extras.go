@@ -17,7 +17,7 @@ import (
 	datastore_types "github.com/PretendoNetwork/nex-protocols-go/v2/datastore/types"
 )
 
-const dataStorePort = 8081
+const dataStorePort = 8765
 
 type storedObject struct {
 	id       uint64
